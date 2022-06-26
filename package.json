@@ -9,7 +9,11 @@
   "author": "Techrus Labs",
   "license": "UNLICENSED",
   "scripts": {
-   "start":"nodemon app.js"
+    "lint": "eslint .eslintrc.cjs",
+    "start": "node ./app/app.js",
+    "prod": "npm run production",
+    "start:dev": "nodemon ./app/app.js",
+    "start:prod": "node./app/app.js"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.42.0",
