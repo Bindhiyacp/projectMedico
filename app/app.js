@@ -47,7 +47,7 @@ app.use('/products', productRoute);
 
 app.use(errorHandler);
 
-const port = process.env.PORT||3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, function() {
   console.log('Server listening on port ' + port);
